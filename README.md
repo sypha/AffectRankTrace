@@ -57,8 +57,8 @@ timestamp | dimension_value
 ----------------------------
 ```
 Description:
-timestamp (float): timestamp of the trace's samples in seconds.
-dimension_value (int): subjective intensity of the annotated dimension indicated by the user.
+- timestamp (float): timestamp of the trace's samples in seconds.
+- dimension_value (int): subjective intensity of the annotated dimension indicated by the user.
 
 #### discrete_data.csv:
 
@@ -71,11 +71,11 @@ timestamp | arousal_value | arousal_confidence | pleasure_value | pleasure_confi
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
 Description:
-timestamp (float): timestamp of the marked event in seconds.
-arousal/pleasure/dominance value (-3 | -2 | -1 | 0 | 1 | 2 | 3): using the self assessment manikins (SAM) figures.
-arousal/pleasure/dominance/emotion_label confidence (0 | 1 | 2 | 3 | 4 | 5): the user's subjective statement of their confidence level when annotating each component, with 1 and 5 respectively denoting the lowest and highest rates, and 0 indicating unrated.
-has_emotion_label (bool): True if the user decided to type the emotion temselves, else False. 
-emotion_label (string): The label can be typed by the user or picked from the set of emotions suggested by the tool. 
+- timestamp (float): timestamp of the marked event in seconds.
+- arousal/pleasure/dominance value (-3 | -2 | -1 | 0 | 1 | 2 | 3): using the self assessment manikins (SAM) figures.
+- arousal/pleasure/dominance/emotion_label confidence (0 | 1 | 2 | 3 | 4 | 5): the user's subjective statement of their confidence level when annotating each component, with 1 and 5 respectively denoting the lowest and highest rates, and 0 indicating unrated.
+- has_emotion_label (bool): True if the user decided to type the emotion temselves, else False. 
+- emotion_label (string): The label can be typed by the user or picked from the set of emotions suggested by the tool. 
 
 ## Citation
 
