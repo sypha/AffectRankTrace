@@ -79,7 +79,7 @@ Description:
 
 ## Citation
 
-If you use this software in your research, please cite:
+If you use this tool in your research, please cite:
 
 ```bibtex
 @inproceedings{graja2024affectranktrace,
