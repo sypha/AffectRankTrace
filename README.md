@@ -45,7 +45,37 @@ The application generates two .csv files stored in a dedicated subdirectory loca
 
 ### Data structure
 
+#### realtime_data.csv:
 
+This file contains the continuous annotation of a specified dimension.
+
+The columns are in the following order:
+
+```
+----------------------------
+timestamp | dimension_value 
+----------------------------
+```
+Description:
+timestamp (float): timestamp of the trace's samples in seconds.
+dimension_value (int): subjective intensity of the annotated dimension indicated by the user.
+
+#### discrete_data.csv:
+
+This file contains the discrete annotations of Pleasure, Arousal and Dominance at the events marked by the user during the continuous annotation phase. In this context, an event refers to the moment the user started pressing a button to increase or decrease the level of the continuous trace. 
+
+The columns are in the following order:
+```
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+timestamp | arousal_value | arousal_confidence | pleasure_value | pleasure_confidence | dominance_value | dominance_confidence | has_emotion_label | emotion_label | emotion_label_confidence
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
+Description:
+timestamp (float): timestamp of the marked event in seconds.
+arousal/pleasure/dominance value (-3 | -2 | -1 | 0 | 1 | 2 | 3): using the self assessment manikins (SAM) figures.
+arousal/pleasure/dominance/emotion_label confidence (0 | 1 | 2 | 3 | 4 | 5): the user's subjective statement of their confidence level when annotating each component, with 1 and 5 respectively denoting the lowest and highest rates, and 0 indicating unrated.
+has_emotion_label (bool): True if the user decided to type the emotion temselves, else False. 
+emotion_label (string): The label can be typed by the user or picked from the set of emotions suggested by the tool. 
 
 ## Citation
 
