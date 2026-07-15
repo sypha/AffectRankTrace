@@ -9,8 +9,6 @@ AffectRankTrace is an annotation tool that enables continuous, unbounded annotat
 ### Manipulation
 During video play, users perform continuous annotation by long-pressing, for a subjective duration, one of the dedicated keys to either raise or lower the curve line. When the key is released, a red line appears to mark the annotation event (see Figure below). When no key is pressed, the curve line continues straight at the last level set after the key was released. At the end of the recording, continuous annotation is terminated and the tool enables navigation between the annotation events (red lines) to assess arousal, pleasure, and dominance using SAM. Users can freely browse the marked events using "previous" and "next" buttons, skipping irrelevant ones. They can also replay 10 seconds of the recording around each event (5 seconds before and after) for reference. The "finish" button becomes enabled at the final event, allowing users to end the annotation process.
 
-## Tool Screenshot
-
 <p align="center">
   <img src="affectranktrace_interface.png" alt="AffectRankTrace interface">
 </p>
